@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="shortcut icon" href="images/pngegg.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/2ca226c368.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LOGIN</h1>
+      <form>
+        <div class="form-control">
+          <input type="text" id="username" placeholder="Username" />
+          <span></span>
+          <small></small>
+        </div>
+        <div class="form-control mail">
+          <input type="email" id="email" placeholder="Email" />
+          <span></span>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password" />
+          <span></span>
+          <small></small>
+        </div>
+        <div class="form-control pass2">
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirm password"
+          />
+          <span></span>
+          <small></small>
+        </div>
+        <a href="index.html">
+            <input type="submit" value="Login">
+        </a>
+        <p class="login-with">Or</p>
+        <div class="home">
+            <a href="https://www.google.com/"><img class="login-google" src="./images/google.png" alt="" title="Google"></a>
+            <a href="https://www.facebook.com/"><img class="login-facebook" src="./images/facebook.png" alt="" title="Facebook"></a>
+            <a href="index.html"><i class="fa-solid fa-house-chimney" title="Home"></i></a>
+        </div>
+        <div class="signup_link">Not a member? 
+            <a href="register.html">Register</a>
+            
+        </div>
+      </form>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

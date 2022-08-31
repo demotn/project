@@ -1,0 +1,40 @@
+body { 
+  margin: 0 auto;
+  }
+#demos .owl-carousel .itemm {
+background: #4DC7A0;
+}
+.owl-nav{
+  display: none;
+}
+.row{
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+}
+.itemm{
+  margin-right: 3px;
+}
+.owl-dots{
+  margin-top: 24px;
+}
+.owl-dot span{
+  opacity: 0.5;
+  background-color: #8262b5 !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: #8262b5 !important;
+  opacity: 1;
+  height: 13px;
+  width: 13px;
+}
+@media (max-width:320px){
+  .owl-dots{
+    margin: 0;
+  }
+}
+@media (min-width:321px) and (max-width:740px){
+  .owl-dots{
+    margin: 0;
+  }
+}

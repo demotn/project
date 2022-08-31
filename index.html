@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Franco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/pngegg.png">
+    <!-- ----------------------- Slider ------------------------------ -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <!-- ----------------------------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/2ca226c368.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- top menu -->
+        <div class="top-menu">
+            <p class="top-menu1"><i class="fa-regular fa-bookmark iconsz"></i> Welcome to Franco - an e-Commerce PSD Template!</p>
+            <div class="top-menu2">
+                 <a class="shop-setting" href="#"><i class="fa-solid fa-gear"></i> Shop Setting</a>
+                 <a class="member-login" href="login.html"><i class="fa-solid fa-lock"></i> Member Login</a>
+            </div>
+        </div>
+        <!-- menu -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#"><img src="./images/logo.jpg" alt="" title="home" class="logo" ></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="test.html">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li>    -->
+                <li><div class="search-box">
+                    <input type="text" id="change-color" class="search-input" />
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>   
+                </div></li>
+            </ul>
+            <!-- nav mobile -->
+           
+
+            <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="nav__overlay"></label>  
+            
+            <div class="nav__mobile-menu">
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <ul class="nav__mobile-list">
+                    <li><input type="text" class="search__mobile"><a href="https://taimeme.com/public/upload/memes/cam-phong-lon-hoi-vua-noi-gi-day.jpg"><i class="fa-solid fa-magnifying-glass btn-search"></i></a></li>   
+                    <li><a href="test.html" class="nav__link">Home</a></li>
+                    <li><a href="" class="nav__link">Women</a></li>
+                    <li><a href="" class="nav__link">Men</a></li>
+                    <li><a href="" class="nav__link">About us</a></li>
+                    <li><a href="" class="nav__link">Blog</a></li>
+                    <li><a href="" class="nav__link">Collections</a></li>
+                    <li><a href="" class="nav__link">Contact</a></li>
+                               
+                </ul>
+                <ul class="nav__cart-mobile">
+                    <!-- <div class="nav-cart-icon"> -->
+                        <div class="heart-cart" > 
+                            <a  href="#"><img src="./images/heart-cart.png" alt=""></a>
+                        </div>
+                        <label onclick="block()" for="nav-shopping-cart">
+                            <img class="shopping-cart" src="./images/shopping-cart-2.png" alt="">
+                        </label>
+                    </div>
+                </ul>
+            </div>
+            <!-- ------ -->
+
+            <div class="nav-cart">
+                <div class="nav-cart-icon">
+                    <div class="heart-cart" > 
+                        <a  href="#"><img src="./images/heart-cart.png" alt=""></a>
+                    </div>
+                    <label onclick="block()" for="nav-shopping-cart">
+                        <img class="shopping-cart" src="./images/shopping-cart-2.png" alt="">
+                    </label>
+                </div>
+                <label for="nav-mobile-input" class="nav__bars-btn">
+                    <i class="nav-icon fa-solid fa-bars"></i>
+                </label> 
+            </div>
+            
+        </nav>
+        <!-- Cart-->
+        <section  class="cart ">
+            <form action="">
+                <div onclick="none()" class="cart-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <h2>Cart</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td class="cart-imgs"><img class="cart-img" src="./images/products1.jpg" alt="">Watch</td>
+                            <td><p>$<span class="price">84.00</span></p></td>
+                            <td><input class="cart-input" type="number" value="1" min="0"></td>
+                            <td>Delete</td>
+                        </tr>
+                        <tr>
+                            <td class="cart-imgs"><img class="cart-img" src="./images/products2.jpg" alt="">Bag</td>
+                            <td><span>$84.00</span></td>
+                            <td><input class="cart-input" type="number" value="1" min="0"></td>
+                            <td>Delete</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="total-price">
+
+                    <p>Total price: $<span>0</span></p>
+                </div>
+                <div class="pay">
+                    <a href="https://s.memehay.com/files/posts/20210427/meo-khoc-noi-nhung-lam-deo-co-tien-ban-oi.jpeg">Pay</a>
+                </div>
+            </form>
+        </section>
+        <!-- Banner -->
+        <div id="ads">
+            <div class="banner-left">
+                <img  src="./images/banner01.jpg"alt="" class="img__left">
+                <div class="banner-text">
+                    <p class="bly">Lyszak</p>
+                    <p class="eyewear">Eyewear</p>
+                    <p class="two-high-end">Two High-end Materials</p>
+                    <button class="btn-shop-now">Shop Now</button>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="banner-2">
+                    <p class="small-thing">Small thing</p>
+                    <p class="make-different">Make different</p>
+                    <img src="./images/banner2.jpg" alt="" class="img__right2">
+                </div>
+                <div class="banner-3">
+                    <p class="folio">Folio</p>
+                    <p class="backpack">Backpack</p>
+                    <img src="./images/banner3.jpg" alt="" class="img__right2">
+                    <button class="btn-shop-now btn2">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- products -->
+        <div id="products">
+            <div class="title">
+                <h5 class="title1">FRANCO</h5>
+                <h2 class="title2">Featured items</h2>
+            </div>
+            <div class="straight-line">
+
+            </div>
+            <div class="items">
+               <div class="item">
+                <div class="item1">
+                    <img class="item-img" src="./images/products1.jpg" alt="">
+                    <button class="btn-add-to-cart" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Suspendisse id volutpat</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img class="item-img" src="./images/products2.jpg" alt="">
+                    <button class="btn-add-to-cart" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Lorem ipsum dolor</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div><div class="item1">
+                    <img class="item-img" src="./images/products3.jpg" alt="">
+                    <button class="btn-add-to-cart" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Proin sed nulla mi</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img class="item-img" src="./images/products4.jpg" alt="">
+                    <button class="btn-add-to-cart" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Aenean placerat</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img class="item-img" src="./images/products5.jpg" alt="">
+                    <button class="btn-add-to-cart btn-row-2" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Suspendisse id volutpat</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img class="item-img  item-6" src="./images/products6.jpg" alt="">
+                    <button class="btn-add-to-cart btn-row-2" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Lorem ipsum dolor</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price price-6">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img  class="item-img"src="./images/products7.jpg" alt="">
+                    <button class="btn-add-to-cart btn-row-2" onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Proin sed nulla mi</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star grey"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img class="item-img" class="item-img" src="./images/products8.jpg" alt="">
+                    <button class="btn-add-to-cart btn-row-2"onclick="add()">Add to cart</button>
+                    <a class="name" href="#">Aenean placerat</a>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="cost">
+                        <div class="no-discounts">
+                            <del>$99.00</del>
+                        </div>
+                        <div class="discounts">
+                            <p>$<span class="price">84.00</span></p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+            
+        </div>
+        <!-- blog -->
+        <div id="blog"> 
+            <!-- <img src="./images/bgrblog.jpg" alt=""> -->
+            <div class="blog-title">
+                <h5 class="blog-title1">Latest</h5>
+                <h2 class="blog-title2">News & events</h2>
+                <div class="straight-line2">                   
+                </div>
+            </div>
+            <div class="blog-contents">
+                <section id="demos">
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <div class="owl-carousel owl-theme">
+                          <div class="itemm">
+                            <div class="frames frame-1">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog1.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"><a href="#">In commodo dolor vitae</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-2">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-3">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog3.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"><a href="#">Ut lacinia erat ut diam volutpat</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-2">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-2">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-2">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="itemm">
+                            <div class="frames frame-2">
+                                <div class="date">
+                                    <div class="date box">
+                                        <p class="box-month">Jan</p>
+                                        <p class="box-date">23</p>
+                                    </div>
+                                </div>
+                                <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                <div class="content"> 
+                                    <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                    <div class="line"></div>
+                                    <div class="cmt">
+                                        <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                        <h5 class="comment-amount color-heart">12</h5>
+                                        <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                        <h5 class="heart-amount color-heart">6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          </div>                       
+                        </div>
+                        </div>
+                    </div>
+                  </section>
+                <!-- <div class="blog-frame">
+                                    <div class="frames frame-1">
+                                        <div class="date">
+                                            <div class="date box">
+                                                <p class="box-month">Jan</p>
+                                                <p class="box-date">23</p>
+                                            </div>
+                                        </div>
+                                        <img class="blog-img" src="./images/blog1.jpg" alt="">
+                                        <div class="content"> 
+                                            <div class="content-a"><a href="#">In commodo dolor vitae</a></div>
+                                            <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                            <div class="line"></div>
+                                            <div class="cmt">
+                                                <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                                <h5 class="comment-amount color-heart">12</h5>
+                                                <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                                <h5 class="heart-amount color-heart">6</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="frames frame-2">
+                                        <div class="date">
+                                            <div class="date box">
+                                                <p class="box-month">Jan</p>
+                                                <p class="box-date">23</p>
+                                            </div>
+                                        </div>
+                                        <img class="blog-img" src="./images/blog2.jpg" alt="">
+                                        <div class="content"> 
+                                            <div class="content-a"> <a href="#">Vivamus non dignissim elit</a></div>
+                                            <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                            <div class="line"></div>
+                                            <div class="cmt">
+                                                <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                                <h5 class="comment-amount color-heart">12</h5>
+                                                <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                                <h5 class="heart-amount color-heart">6</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="frames frame-3">
+                                        <div class="date">
+                                            <div class="date box">
+                                                <p class="box-month">Jan</p>
+                                                <p class="box-date">23</p>
+                                            </div>
+                                        </div>
+                                        <img class="blog-img" src="./images/blog3.jpg" alt="">
+                                        <div class="content"> 
+                                            <div class="content-a"><a href="#">Ut lacinia erat ut diam volutpat</a></div>
+                                            <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris. </p>
+                                            <div class="line"></div>
+                                            <div class="cmt">
+                                                <h5 class="comment"><i class="fa-regular fa-comment color-cmt"></i></h5>
+                                                <h5 class="comment-amount color-heart">12</h5>
+                                                <h5 class="heart"><i class="fa-regular fa-heart color-cmt"></i></h5>
+                                                <h5 class="heart-amount color-heart">6</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                </div> -->
+            </div> 
+            
+        </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- ----------------------------------------------------- -->
+    <footer>
+        <div id="footer">
+            <!-- Footer  -->
+            <div class="group">
+                <div class="about-us ab1">
+                    <p>About Franco</p>
+                    <div class="group-line"></div>
+                    <div class="group-text">
+                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit,
+                            orci mauris vulputate mi, eu interdum nunc diam at ipsum.</p>
+                    </div>
+                    <div class="abu-icon">
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-behance"></i>
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>                           
+                </div>
+                <div class="about-us ab2">
+                    <p>Navigation</p>  
+                    <div class="group-line"></div>
+                    <div class="nav-text">
+                        <div class="nav-text1">
+                            <a href="#">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Our Blog</a>
+                            <a href="#">Women</a>
+                            <a href="#">Men</a>
+                            <a href="#">Contact Us</a>                      
+                        </div> 
+                        <div class="nav-text2">
+                            <a href="#">FAQs</a>
+                            <a href="#">Featured Brands</a>
+                            <a href="#">Gift Voucher</a>
+                            <a href="#">Affiliates</a>
+                            <a href="#">Specials Gift</a>
+                            <a href="#">Terms & Conditions</a> 
+                        </div>     
+                    </div>                   
+                </div>
+                <div class="about-us ab3">
+                    <p>Shop Location</p>     
+                    <div class="group-line"></div> 
+                    <div class="shop-content">
+                       <div class="address">
+                            <i class="fa-regular fa-map"></i>
+                            <a href="https://goo.gl/maps/76q3ptnfdJrrvwhDA" class="address1">500 Hennessy Road</a>
+                       </div>
+                       <a class="address2">Causeway Bay, Hong Kong</a>
+                       <div class="number-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a class="num-phone">+1 23456789</a>
+                       </div>
+                       <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a class="addr-email">contact@yourdomain.com</a>
+                       </div>
+                    </div>                     
+                </div>
+            </div>
+            <div class="footer-line">
+            </div>
+            <!-- Bottom Footer  -->
+            <div class="bottom-footer">
+                <div class="copy-right">
+                    <i class="fa-regular fa-copyright"></i>
+                    <p class="copy-right1">Copyright 2015 & Made with</p>
+                    <i class="fa-solid fa-heart cpy-heart"></i>
+                    <p class="copy-right2">by</p>
+                    <a href="https://www.arrowhitech.com/" target="_blank" style="text-decoration: none;"><p class="copy-right3">ArrowHitech.</p></a>
+                </div>
+                <div class="bank">
+                    <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-discover"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
