@@ -459,9 +459,9 @@ p.top-menu1{
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
 }
-.item-6{
+/* .item-6{
     height: 78%;
-}
+} */
 
 .btn-add-to-cart{
     padding-left: 7px;
@@ -1064,9 +1064,9 @@ p.top-menu1{
     .items, .title{
         padding: 0 20px ;
     }
-    .item-6{
+    /* .item-6{
         height: 345px;
-    }
+    } */
     .straight-line{
         margin-left: 20px;
     }
@@ -1253,9 +1253,9 @@ p.top-menu1{
     .btn-row-2{
         bottom: 92px;
     }
-    .item-6{
+    /* .item-6{
         height: 194px;
-    }
+    } */
     #blog{
         padding-bottom: 20px;
     }
@@ -1477,9 +1477,9 @@ p.top-menu1{
     .btn-row-2{
         bottom: 92px;
     }
-    .item-6{
+    /* .item-6{
         height: 207px;
-    }
+    } */
     #blog{
         padding-bottom: 20px;
     }
