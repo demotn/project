@@ -8,8 +8,8 @@ html{
 }
 /* ----------------------------------------- */
 .search-box {
-    margin-top: -6px;
-    margin-left: -5px;
+    margin-top: -7px;
+    margin-left: -3px;
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -25,14 +25,13 @@ html{
 	width: 200px;
 }
 .search-input {
-	width: 85%;
-	height: 100%;
-	border: none;
+    width: 85%;
+    height: 90%;
 	box-shadow: none;
 	color: #000000;
     padding-left: 5px;
 	font-size: 14px;
-    border: 1px solid #000000;
+    margin-top: 1px;
 }
 .search-btn {
     background-color: #fff;
@@ -77,7 +76,6 @@ p.top-menu1{
 .nav-logo{
     margin-left: 20px;
     display:flex ;
-    align-items: center;
     height: 40px;
     max-width: 200px;
 }
@@ -100,7 +98,7 @@ p.top-menu1{
 }
 .navbar{
     display: none;
-    height: 79px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -196,6 +194,7 @@ p.top-menu1{
     position: absolute;
     top: 10px;
     right: 1rem;
+    cursor: pointer;
 }
 .delete-product{
     cursor: pointer;
@@ -344,8 +343,8 @@ p.top-menu1{
     margin-left: 39px
 }
 .btn-shop-now{
-    font-family: 'Open Sans';
-    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     height: 40px;
     width: 106px;
     background-color: #8262b5;
@@ -464,7 +463,6 @@ p.top-menu1{
 } */
 
 .btn-add-to-cart{
-    padding-left: 7px;
     background-color: #ffffff;
     border: none;
     font-weight: bold;
@@ -552,7 +550,7 @@ p.top-menu1{
     margin-top: 19px;
     margin-left: 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     color: #000000;
 }
 .content a:hover{
@@ -564,10 +562,10 @@ p.top-menu1{
     margin-top: 19px;
     margin-right: 20px;
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-family: Open Sans;
     text-align: left;
-    color: black;
+    color: #5b5b5b;
 }
 .color-cmt{
     color: #d9d9d9;
@@ -579,7 +577,7 @@ p.top-menu1{
 }
 .line{
     padding-top: 18px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ededed;
 }
 .cmt{
     margin-top: 19px;
@@ -656,7 +654,7 @@ p.top-menu1{
     justify-content: center;
     padding-top: 62px;
     display: flex;
-    color: #ffffff;
+    color: #f7f7f7;
     margin: auto;
 }
 .group-line{
@@ -666,6 +664,10 @@ p.top-menu1{
 }
 .about-us p{
     letter-spacing: 1px;
+}
+.about-us h5{
+    font-weight: unset;
+    font-size: 16px;
 }
 .ab1{
     width: 36%;
@@ -741,7 +743,6 @@ p.top-menu1{
     color: #888888;
     text-decoration: none;
     font-family: Open Sans;
-    margin-left: 13px;
     margin-top: 4px;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -754,30 +755,31 @@ p.top-menu1{
     line-height: 2.4;
 }
 .fa-phone{
-    color: #888888;
+    margin-right: 20px;
     margin-top: 12px;
     font-size: 10px;
 }
 .num-phone{
+    text-decoration: none;
     color: #888888;
     font-size: 14px;
     margin-top: 7px;
-    margin-left: 22px;
 }
 .fa-envelope{
-    color: #888888;
-    margin-top: 8px;
+    margin-right: 15px;
+
 }
 .addr-email{
+    text-decoration: none;
+    color: #888888;
     font-size: 14px;
     font-family: Open Sans;
-    margin-top: 13px;
-    margin-left: 17px;
     letter-spacing: 0.5px;
 }
 .fa-regular.fa-map{
     font-size: 16px;
     margin-top: 7px;
+    margin-right: 12px;
 }
 .number-phone{
     display: flex;
@@ -787,6 +789,7 @@ p.top-menu1{
 }
 .email{
     display: flex;
+    margin-top: 16px;
 }
 .email p{
     margin-left: 14px;
@@ -815,7 +818,9 @@ p.top-menu1{
     width: 1140px;
     max-width: 100%;
     margin: auto;
-
+}
+.mbl{
+    display: none;
 }
 .copy-right{
     margin-left: 0px;
@@ -857,7 +862,10 @@ p.top-menu1{
 .bank a{
     color: #828282;
 }
-.fa-cc-visa:hover, .fa-cc-paypal:hover, .fa-cc-mastercard:hover, .fa-cc-discover:hover, .fa-cc-amex:hover, .address1:hover, .address2:hover, .number-phone i:hover, .num-phone:hover, .email:hover, .email i:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-behance:hover, .fa-basketball:hover{
+.address{
+    display: block;
+}
+.fa-cc-visa:hover, .fa-cc-paypal:hover, .fa-cc-mastercard:hover, .fa-cc-discover:hover, .fa-cc-amex:hover, .address a:hover, .address2:hover, .number-phone a:hover, .email a:hover, .fa-twitter:hover, .fa-linkedin-in:hover, .fa-behance:hover, .fa-basketball:hover{
     cursor: pointer;
     color: #fff;
 }
@@ -908,9 +916,11 @@ p.top-menu1{
 .nav__mobile-close{
     font-size: 28px;
     position: absolute;
-    top: 1rem;
+    top: 5px;
     right: 1rem;
-
+}
+.fa-xmark:hover, .nav__link:hover{
+    color: #8262b5;
 }
 .nav__input:checked ~ .nav__overlay{
     display: block;
@@ -942,16 +952,25 @@ p.top-menu1{
 }
 
 @media  (max-width: 320px) {
-    p.top-menu1{
-        display: none;
-    }
     .top-menu2{
         display: flex;
         justify-content: space-between;
-        margin-left: 20px;
     }
-    .top-menu2 a{
-        margin: 13px 0 0 0;
+    .top-menu{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    p.top-menu1{
+        margin: 10px 20px;
+    }
+    .top-menu2 a {
+        text-decoration: none;
+        color: rgb(82, 82, 82);
+        margin: 0px 20px 10px 20px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.4px;
     }
     .nav-menu{
         display: none;
@@ -986,9 +1005,6 @@ p.top-menu1{
     .logo{
         margin: 0;
     }
-    .member-login{
-        padding-left: 65px;
-    }
     .item1{
         width: 100%;
         margin-bottom: 20px;
@@ -1001,7 +1017,7 @@ p.top-menu1{
         width: 100%;
     }
     .banner-right .banner-3{
-        margin: 0;
+       margin-top: 10px;
     }
     .banner-right{
         margin: 0;
@@ -1076,6 +1092,15 @@ p.top-menu1{
     #blog{
         padding-bottom: 20px;
     }
+    .blog-contents{
+        padding: 0 20px;
+    }
+    .content-a{
+        margin-left: 20px;
+    }
+    .content a{
+        margin-left: 0;
+    }
     #footer{
 
         padding-left: 30px;
@@ -1100,7 +1125,7 @@ p.top-menu1{
     .about-us{
         padding-bottom: 30px;
     }
-    .about-us p{
+    .about-us h5{
         text-align: center;
     }
     .ab1{
@@ -1122,14 +1147,18 @@ p.top-menu1{
         display: flex;
     }
     .footer-line{
-        margin: 0;
+        margin: 0 -30px;
     }
     .bottom-footer{
         display: block;
     }
+    .pc{
+        display: none;
+    }
     .copy-right{
-        padding: 0;
+        margin: 0;
         flex-wrap: wrap;
+        padding-bottom: 10px;
     }
     .bank{
         text-align: left;
@@ -1141,6 +1170,22 @@ p.top-menu1{
     .top-menu2{
         display: flex;
         justify-content: space-between;
+    }
+    .top-menu{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    p.top-menu1{
+        margin: 10px 20px;
+    }
+    .top-menu2 a {
+        text-decoration: none;
+        color: rgb(82, 82, 82);
+        margin: 0px 30px 10px 20px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.4px;
     }
     .nav__bars-btn{
         display: block;
@@ -1179,16 +1224,7 @@ p.top-menu1{
         width: calc(50% - 20px);
         margin-left: 20px;
     }
-    .top-menu{
-        width: 100%;
-        display: block;
-    }
-    p.top-menu1{
-        display: none;
-    }
-    .top-menu2{
-        margin-left: 30px;
-    }
+    
     #ads{
         width: calc(100% - 30px);
         flex-wrap: wrap;
@@ -1196,6 +1232,13 @@ p.top-menu1{
     }
     .banner-left{
         margin: 0;
+    }
+    .banner-right{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .banner-right .banner-3{
+        margin-top: 10px;
     }
     .btn-shop-now{
         font-size: 11px;
@@ -1226,8 +1269,8 @@ p.top-menu1{
     .btn-shop-now.btn2{
         top: 175px;
     }
-    .banner-right, .blog-contents, .banner-right .banner-3{
-        margin: 0;
+    .blog-contents{
+        margin: 20px;
     }
     .img__left{
         width: 100%;
@@ -1273,8 +1316,8 @@ p.top-menu1{
         padding-top: 50px;
     }
     #footer{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .nav-text1{
         width: 50%;
@@ -1295,7 +1338,7 @@ p.top-menu1{
     .about-us{
         padding-bottom: 30px;
     }
-    .about-us p{
+    .about-us h5{
         text-align: center;
     }
     .ab1{
@@ -1317,14 +1360,18 @@ p.top-menu1{
         display: flex;
     }
     .footer-line{
-        margin: 0;
+        margin: 0 -20px;
     }
     .bottom-footer{
         display: block;
     }
+    .pc{
+        display: none;
+    }
     .copy-right{
-        padding: 0;
+        padding-bottom: 10px;
         flex-wrap: wrap;
+        margin: 0;
     }
     .bank{
         text-align: left;
@@ -1369,6 +1416,25 @@ p.top-menu1{
         display: flex;
         justify-content: space-between;
     }
+    .top-menu{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    p.top-menu1{
+        margin: 10px 28px;
+    }
+    .top-menu2 a {
+        text-decoration: none;
+        color: rgb(82, 82, 82);
+        margin: 0px 30px 10px -3px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+    }
+    .top-menu2{
+        margin-left: 30px;
+    }
     .nav__bars-btn{
         display: block;
         margin-right: 30px;
@@ -1381,6 +1447,9 @@ p.top-menu1{
     }
     .cart{
         width: 100%;
+    }
+    .nav-cart{
+        margin-right: -10px;
     }
     thead{
         display: none;
@@ -1402,27 +1471,10 @@ p.top-menu1{
     .about-us{
         width: 100%;
     }
-    .item1{
-        width: calc(50% - 35px);
-    }
-    .top-menu{
-        width: 100%;
-        display: block;
-    }
-    p.top-menu1{
-        display: none;
-    }
-    .top-menu2{
-        margin-left: 30px;
-    }
     #ads{
         width: calc(100% - 30px);
         flex-wrap: wrap;
         padding: 0;
-    }
-    .banner-left{
-        margin-right: 17px;
-        margin-left: 17px;
     }
     .btn-shop-now{
         font-size: 11px;
@@ -1453,8 +1505,17 @@ p.top-menu1{
     .btn-shop-now.btn2{
         top: 195px;
     }
-    .banner-right, .blog-contents, .banner-right .banner-3{
+    .banner-right{
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .banner-right .banner-3{
+        margin-top: 10px;
+    }
+    .blog-contents{
         margin: 0;
+        padding: 0 15px;
     }
     .img__left{
         width: 100%;
@@ -1464,9 +1525,13 @@ p.top-menu1{
     }
     .items{
         margin: 50px auto;
-        padding-right: 20px;
+        padding-right: 15px;
         display: block;
         justify-content: center;
+    }
+    .item1{
+        width: calc(50% - 15px);
+        margin-left: 15px;
     }
     .items-row2{
         display: block;
@@ -1477,9 +1542,6 @@ p.top-menu1{
     .btn-row-2{
         bottom: 92px;
     }
-    /* .item-6{
-        height: 207px;
-    } */
     #blog{
         padding-bottom: 20px;
     }
@@ -1497,8 +1559,9 @@ p.top-menu1{
         padding-top: 50px;
     }
     #footer{
-        padding-left: 30px;
-        padding-right: 30px;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .group{
         padding-top: 20px;
@@ -1511,7 +1574,7 @@ p.top-menu1{
     .about-us{
         padding-bottom: 30px;
     }
-    .about-us p{
+    .about-us h5{
         text-align: center;
     }
     .ab1{
@@ -1532,14 +1595,19 @@ p.top-menu1{
         justify-content: center;
         display: flex;
     }
+
     .footer-line{
-        margin: 0;
+        margin: 0 -15px;
     }
     .bottom-footer{
         display: block;
     }
+    .pc{
+        display: none;
+    }
     .copy-right{
-        padding: 0;
+        padding-bottom: 10px;
+        margin: 0;
     }
     .bank{
         text-align: left;
@@ -1574,7 +1642,7 @@ p.top-menu1{
         padding: 0;
     }
     .banner-right{
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .banner-right .banner-3 {
         position: relative;
@@ -1669,7 +1737,7 @@ p.top-menu1{
     .about-us{
         padding-bottom: 30px;
     }
-    .about-us p{
+    .about-us h5{
         text-align: center;
     }
     .ab1{
@@ -1691,7 +1759,7 @@ p.top-menu1{
         display: flex;
     }
     .footer-line{
-        margin: 0;
+        margin: 0 -30px;
     }
 }
 @media (min-width:769px) and (max-width:1024px) {
